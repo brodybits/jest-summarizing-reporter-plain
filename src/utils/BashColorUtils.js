@@ -9,9 +9,8 @@ let lightYellow = colorize("\x1b[93m");
 let yellow = colorize("\x1b[33m");
 
 function colorize(color) {
-  let reset = "\x1b[0m";
   return function(s) {
-    return color + s + reset;
+    return s;
   }
 }
 
